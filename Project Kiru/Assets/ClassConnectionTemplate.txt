@@ -1,0 +1,24 @@
+private ObjectManager objectManager;
+
+
+//For connection with other classes
+GameObject objectManager2 = GameObject.FindWithTag("ObjectManager");
+objectManager = objectManager2.GetComponent<ObjectManager>();
+
+ ----------------
+| All Connections |
+ ----------------
+
+private Player player;
+private ObjectManager objectManager;
+private Drops drop;
+
+
+GameObject objectManager2 = GameObject.FindWithTag("ObjectManager");
+objectManager = objectManager2.GetComponent<ObjectManager>();
+
+GameObject player2 = GameObject.FindWithTag("Player");
+player = player2.GetComponent<Player>();
+
+GameObject drop2 = GameObject.FindWithTag("ObjectManager");
+drop = drop2.GetComponent<Drops>();
